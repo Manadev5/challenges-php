@@ -4,22 +4,28 @@
 
     case empty($_POST['user_name']) :
         echo " champ Nom vide";
+        break;
 
     case strlen($_POST['user_name']) < 2 :
-
         echo " le nom n'est pas assez long";
-       
+        break;
     
     case empty($_POST['user_email']):
         echo " champ email vide";
-        
+    
+    case !filter_var($_POST['user_email'], FILTER_VALIDATE_EMAIL) :
+        echo "format email invalid";
+        break;
 
     case empty($_POST['phone_number']):
         echo " champ email vide";
+        break;
+
 
     case strlen($_POST['phone_number']) < 10 :
         echo " le numero n'est pas assez long";
-      
+        break;
+
 
     case empty($_POST['user_message']):
         echo " champ message vide";

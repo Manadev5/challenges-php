@@ -1,15 +1,15 @@
 <form  action="thanks.php" method="post">
     <div>
       <label for="name">Nom :</label>
-      <input type="text"  id="name"  name="user_name">
+      <input type="text"  id="name"  name="user_name" required>
     </div>
     <div>
         <label for="number"> Telephone : </label>
-        <input type="number" id="number" name ="phone_number">
+        <input type="number" id="number" name ="phone_number" required>
     </div>
     <div>
       <label  for="email">Courriel :</label>
-        <input  type="email"  id="email"  name="user_email">
+        <input  type="email"  id="email"  name="user_email" required>
     </div>
     <div>
         <label for="subject"> Sujet : </label>
@@ -22,7 +22,7 @@
     </div>
     <div>
       <label  for="message">Message :</label>
-      <textarea  id="message"  name="user_message"></textarea>
+      <textarea  id="message"  name="user_message" required></textarea>
     </div>
     <div  class="button">
       <button  type="submit">Envoyer votre message</button>

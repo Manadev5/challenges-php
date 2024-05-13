@@ -1,29 +1,29 @@
 <?php
- 
- $message1 = '0@sn9sirppa@#?ia8\'jgtvryko1';
- $message2 = 'q8e?wsellecif@#?sel@#?setuotpazdsy0*b9+mw@x1vj';
- $message3 = 'aopi?sgnirts@#?sedhtg+p9l!';
 
- $lenght = strlen($message1);
- $lenght2 = strlen($message2);
- $lenght3 = strlen($message3);
+$message1 = '0@sn9sirppa@#?ia`jgtvryko1';
+$message2 = 'q8e?wsellecif@#?sel@#?setuotpazdsy0*b9+mw@x1vj';
+$message3 = 'aopi?sgnirts@#?sedhtg+p9l!';
 
- $lenghtKey = $lenght / 2;
- $lenghtKey2 = $lenght2 / 2;
- $lenghtKey3 = $lenght3 / 2;
+$lenght = strlen($message1);
+$lenght2 = strlen($message2);
+$lenght3 = strlen($message3);
 
- $subString = substr($message1, 13, 6);
- $subString2 = substr($message2, 23, 6);
- $subString3 = substr($message3, 13, 6);
+$lenghtKey = $lenght / 2;
+$lenghtKey2 = $lenght2 / 2;
+$lenghtKey3 = $lenght3 / 2;
 
- $wordReplace = str_replace('@?', ' ', $subString);
- $wordReplace2 = str_replace('@#?', ' ', $subString2);
- $wordReplace3 = str_replace('@#?', ' ', $subString3);
+$subString = substr($message1, 6, $lenghtKey);
+$subString2 = substr($message2, 6, $lenghtKey2);
+$subString3 = substr($message3, 6, $lenghtKey3);
 
- $finalWord = strrev($wordReplace);
- $finalWord2 = strrev($wordReplace2);
- $finalWord3 = strrev($wordReplace3);
+$wordReplace = str_replace('@#?', ' ', $subString);
+$wordReplace2 = str_replace('@#?', ' ', $subString2);
+$wordReplace3 = str_replace('@#?', ' ', $subString3);
+
+$finalWord = strrev($wordReplace);
+$finalWord2 = strrev($wordReplace2);
+$finalWord3 = strrev($wordReplace3);
 
 
 
- echo $finalWord . ' ' . $finalWord2 . ' '. $finalWord3;
+echo $finalWord . ' ' . $finalWord2 . ' ' . $finalWord3;

@@ -1,11 +1,10 @@
 <?php
-
 require_once __DIR__.'/../poo-challenge-2/vehicle.php';
 
 class Car extends Vehicle{
     public int $wheelsAmount;
     public string $fuelType;
-    private bool $hasParkBreak;
+    public bool $hasParkBreak;
 
 
     public function start(){

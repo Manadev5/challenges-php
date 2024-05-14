@@ -12,12 +12,6 @@ class Vehicle {
         $this->energyType = $energyType;
     }
 
-    public function start(){
-        if($this->currentSpeed == 0){
-          return  $this->currentSpeed ++;
-        }
-    }
-
     public function forward(){
         if($this->currentSpeed > 0){
            return $this->currentSpeed + 15;
